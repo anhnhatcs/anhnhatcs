@@ -29,7 +29,9 @@ __Check out my GitHub repository:__
     </a>
   </p>
 </div> -->
-
+<h2>👀 Master's Projects</h2>
+- Hate speech and offensive language detection on the Twitter dataset.
+- Customer Churn Classification
 <h2>👀 Stats</h2>
 - To be updated
 <div>
