@@ -1,11 +1,13 @@
 ![Anh Nhat Image](./banner.png)
 <!-- <h2 align='center'>Lakshmanan Meiyappan @ Laxmena</h2>
 <p align='center'><b>Graduate Student at University of Illinois at Chicago</b></p> -->
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anhnhatcs&show_icons=true&theme=transparent)
-
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=anhnhatcs&show_icons=true&theme=transparent" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anhnhatcs&layout=compact&langs_count=8&card_width=320" />
+</a>
 <h2>Hey! 👋</h2>
-
-[![GitHub followers](https://img.shields.io/github/followers/anhnhatcs.svg?style=social&label=Follow)](https://github.com/anhnhatcs?tab=followers)
 
 I'm Anh-Nhat Nguyen! 
 - <i>Currently:</i> Master Data Science Student at University of Mannheim, Germany. 
