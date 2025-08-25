@@ -1,6 +1,7 @@
 ![Anh Nhat Image](./banner.png)
 <!-- <h2 align='center'>Lakshmanan Meiyappan @ Laxmena</h2>
 <p align='center'><b>Graduate Student at University of Illinois at Chicago</b></p> -->
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anhnhatcs&show_icons=true&theme=transparent)
 
 <h2>Hey! 👋</h2>
 
