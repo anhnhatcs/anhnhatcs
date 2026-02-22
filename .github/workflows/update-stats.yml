@@ -1,0 +1,34 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Allows the action to commit the images back to your repo
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Stats SVGs
+        run: |
+          # Fetch the main stats card
+          curl -o github-stats.svg "https://github-readme-stats.vercel.app/api?username=anhnhatcs&show_icons=true&theme=transparent"
+          
+          # Fetch the top languages card
+          curl -o top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs?username=anhnhatcs&layout=compact&langs_count=8&card_width=320&theme=transparent"
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add github-stats.svg top-langs.svg
+          
+          # If there are no changes, do nothing. Otherwise, commit and push.
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update github stats" && git push)
