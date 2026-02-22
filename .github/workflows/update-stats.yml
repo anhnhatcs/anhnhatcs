@@ -18,12 +18,11 @@ jobs:
 
       - name: Fetch Stats SVGs
         run: |
-          # Fetch the main stats card
-          curl -o github-stats.svg "https://github-readme-stats.vercel.app/api?username=anhnhatcs&show_icons=true&theme=transparent"
+          # Fetch the main stats card using a community mirror
+          curl -o github-stats.svg "https://github-readme-stats-eight-theta.vercel.app/api?username=anhnhatcs&show_icons=true&theme=transparent"
           
-          # Fetch the top languages card
-          curl -o top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs?username=anhnhatcs&layout=compact&langs_count=8&card_width=320&theme=transparent"
-
+          # Fetch the top languages card using a community mirror
+          curl -o top-langs.svg "https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=anhnhatcs&layout=compact&langs_count=8&card_width=320&theme=transparent"
       - name: Commit and Push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
